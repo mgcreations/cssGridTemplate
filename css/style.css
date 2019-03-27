@@ -281,3 +281,68 @@ BASIC STYLES
     text-transform: uppercase;
     font-size: 1.25em;
   }
+
+  .menu-toggle.toggled-on {
+    background: var(--primary-bg-color);
+  }
+
+  .srt-menu {
+    display: none;
+  }
+
+  .srt-menu.toggled-on {
+    display: block;
+    position: relative;
+    z-index: 10;
+  }
+
+  .srt-menu {
+    clear: both;
+    margin-bottom: 60px;
+  }
+
+  .srt-menu li a {
+    background: #dadada;
+    display: block;
+    margin: 1px 0;
+    padding: 10px;
+    text-decoration: none;
+  }
+
+  .srt-menu li a:hover {
+    background: #0099ff;
+    color: #fff;
+  }
+
+  .srt-menu li li a {
+    background: #e8e8e8;
+    padding-left: 40px;
+  }
+
+  .srt-menu li li li a {
+    background: #efefef;
+    padding-left: 80px;
+  }
+
+  /*
+  -----------------
+  SECONDARY MENU
+  -----------------
+  */
+
+  #secondary-navigation {
+    margin-bottom: 60px;
+  }
+
+  #secondary-navigation ul {
+    margin: 0;
+    padding: 0;
+  }
+
+  #secondary-navigation ul li a {
+    background: #e6e6e6;
+    display: block;
+    margin: 5px 0;
+    padding: 10px;
+    text-decoration: none;
+  }
