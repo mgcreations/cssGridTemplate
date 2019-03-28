@@ -181,7 +181,126 @@ BASIC STYLES
     -ms-flex-positive: 1;
     flex-grow: 1;
   }
+
+  .container, .container-fluid, .container-lg, 
+  .container-wide, .container-xl {
+    margin: 0 auto;
+    padding: 0 20px;
+    width: 100%;
+  }
   
+  .container, container-lg {
+    max-width: 1040px;
+  }
+
+  .container-wide, .container-xl {
+    max-width: 1160px
+  }
+
+  .common-PageTitle {
+    font-weight: 300;
+    font-size: 45px;
+    line-height: 56px;
+    color: #32325d;
+    letter-spacing: -.01em;
+  }
+
+  @media (min-width:670px) {
+    .common-PageTitle {
+      font-size: 53px;
+      line-height: 68px;
+    }
+  }
+
+  .common-SectionTitle {
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 44px;
+    color: #32325d;
+  }
+
+  @media (min-width: 670px) {
+    .common-SectionTitle {
+      font-size: 42px;
+      line-height: 52px;
+    }
+  }
+
+  .common-SectionTitleHighlight {
+    font-weight: 300;
+    color: #6772e5;
+  }
+
+  .common-IntroText {
+    font-weight: 300;
+    font-size: 21px;
+    line-height: 32px;
+    color: #424770;
+  }
+
+  @media (min-width:670px) {
+    .common-IntroText {
+      font-size: 24px;
+      line-height: 36px;
+    }
+  }
+
+  .common-BodyTitle {
+    font-weight: 500;
+    font-size: 19px;
+    line-height: 32px;
+    color: #32325d;
+  }
+
+  .common-BodyText {
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 28px;
+    color: #525f7f;
+  }
+
+  .common-MediumBodyText {
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 32px;
+    color: #525f7f;
+  }
+
+  .common-UppercaseTitle {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 32px;
+    text-transform: uppercase;
+    letter-spacing: .025em;
+  }
+
+  @media (min-width: 670px) {
+    .common-UppercaseTitle {
+      font-size: 21px;
+      line-height: 32px;
+    }
+  }
+
+  .common-UpperText {
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 28px;
+    text-transform: uppercase;
+    letter-spacing: 0.25em;
+  }
+
+  .common-AlignRight {
+    text-align: right;
+  }
+
+  .common-AlignLeft {
+    text-align: left;
+  }
+
+  .common-NoWrap {
+    white-space: nowrap;
+  }
+
   h1, 
   h2, 
   h3, 
