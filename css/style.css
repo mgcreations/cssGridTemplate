@@ -301,6 +301,81 @@ BASIC STYLES
     white-space: nowrap;
   }
 
+  .common-ProductLockup, 
+  .common-ProductLockupBack {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 30px;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  @media (min-width: 670px) {
+    .common-ProductLockup,
+    .common-ProductLockupBack {
+      font-size: 28px;
+      line-height: 38px;
+    }
+  }
+
+  .common-ProductLockup .icon,
+  .common-ProductLockupBack .icon {
+    width: 64px;
+    height: 64px;
+    overflow: hidden;
+    border-radius: 50%;
+    -webkit-box-shadow:0 13px 27px -5px rgba(50,50,93,.25),0 8px 16px -8px rgba(0,0,0,.3),0 -6px 16px -6px rgba(0,0,0,.025);
+    box-shadow:0 13px 27px -5px rgba(50,50,93,.25),0 8px 16px -8px rgba(0,0,0,.3),0 -6px 16px -6px rgba(0,0,0,.025);
+    margin-right: 20px;
+  }
+
+  @media (min-width: 670px) {
+    .common-ProductLockup .icon,
+    .common-ProductLockupBack .icon {
+      width: 72px;
+      height: 72px;
+    }
+  }
+
+  .common-ProductLockupBack {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    font-size: 20px;
+    -webkit-transition: color .1s;
+    transition: color .1s;
+  }
+
+  .common-ProductLockupBack:before {
+    font:normal 48px/24px StripeIcons;
+    content:"\279D";
+    -webkit-transform:scaleX(-1);
+    transform:scaleX(-1);
+    width:36px;
+    text-align:right;
+    position:relative;
+    top:-6px;
+    -webkit-transition:color .1s;
+    transition:color .1s;
+  }
+
+  .common-ProductLockupBack .icon {
+    width: 48px;
+    height: 48px;
+  }
+
+  .common-ProductLockupBack .hover-fillDark,
+  .common-ProductLockupBack .hover-fillLight {
+    -webkit-transition: fill .1s;
+    transition: fill .1s;
+  }
+
   h1, 
   h2, 
   h3, 
