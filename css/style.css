@@ -499,16 +499,66 @@ BASIC STYLES
     color:#6772e5;
     text-decoration:none;
     -webkit-transition:all .15s ease;
-    transition:all .15s ease
+    transition:all .15s ease;
   }
 
   .keyboard-navigation .common-Button:focus {
     outline:none;
     -webkit-box-shadow:0 0 0 1.5px hsla(0,0%,100%,.75),0 0 0 1.25px rgba(82,95,127,.5) inset,0 13px 27px -5px rgba(50,50,93,.25),0 8px 16px -8px rgba(0,0,0,.3),0 -6px 16px -6px rgba(0,0,0,.025);
-    box-shadow:0 0 0 1.5px hsla(0,0%,100%,.75),inset 0 0 0 1.25px rgba(82,95,127,.5),0 13px 27px -5px rgba(50,50,93,.25),0 8px 16px -8px rgba(0,0,0,.3),0 -6px 16px -6px rgba(0,0,0,.025)
+    box-shadow:0 0 0 1.5px hsla(0,0%,100%,.75),inset 0 0 0 1.25px rgba(82,95,127,.5),0 13px 27px -5px rgba(50,50,93,.25),0 8px 16px -8px rgba(0,0,0,.3),0 -6px 16px -6px rgba(0,0,0,.025);
   }
 
-  
+  .common-Button:focus,
+  .common-Button:hover {
+    color:#7795f8;
+    -webkit-transform:translateY(-1px);
+    transform:translateY(-1px);
+    -webkit-box-shadow:0 13px 27px -5px rgba(50,50,93,.25),0 8px 16px -8px rgba(0,0,0,.3),0 -6px 16px -6px rgba(0,0,0,.025);
+    box-shadow:0 13px 27px -5px rgba(50,50,93,.25),0 8px 16px -8px rgba(0,0,0,.3),0 -6px 16px -6px rgba(0,0,0,.025);
+    -webkit-box-shadow:0 7px 14px rgba(50,50,93,.1),0 3px 6px rgba(0,0,0,.08);
+    box-shadow:0 7px 14px rgba(50,50,93,.1),0 3px 6px rgba(0,0,0,.08);
+}
+
+.common-Button:active {
+  color:#555abf;
+  background-color:#f6f9fc;
+  -webkit-transform:translateY(1px);
+  transform:translateY(1px);
+  -webkit-box-shadow:0 6px 12px -2px rgba(50,50,93,.25),0 3px 7px -3px rgba(0,0,0,.3);
+  box-shadow:0 6px 12px -2px rgba(50,50,93,.25),0 3px 7px -3px rgba(0,0,0,.3)
+}
+.common-Button--default {
+  color:#fff;
+  background:#6772e5;
+}
+
+.common-Button--default:focus,
+.common-Button--default:hover {
+  color:#fff;
+  background-color:#7795f8;
+}
+.common-Button--default:active {
+  color:#e6ebf1;
+  background-color:#555abf;
+}
+.common-Button--dark {
+  color:#fff;
+  background:#32325d;
+}
+.common-Button--dark:focus,
+.common-Button--dark:hover {
+  color:#fff;
+  background-color:#43458b;
+}
+.common-Button--dark:active {
+  color:#e6ebf1;
+  background-color:#32325d;
+}
+.common-Button--disabled {
+  color:#fff;
+  background:#aab7c4;
+  pointer-events:none;
+}
 
   h1, 
   h2, 
