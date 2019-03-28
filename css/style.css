@@ -376,6 +376,140 @@ BASIC STYLES
     transition: fill .1s;
   }
 
+  .common-ProductLockupBack .hover-strokeDark,
+  .common-ProductLockupBack .hover-strokeLight {
+    -webkit-transition: fill .1s;
+    transition:fill .1s;
+  }
+
+  .common-ProductLockupBack:hover .hover-fillLight {
+    fill: #8898aa;
+  }
+
+  .common-ProductLockupBack:hover .hover-fillDark {
+    fill: #32325d;
+  }
+
+  .common-ProductLockupBack:hover .hover-strokeLight {
+    stroke: #8898aa;
+  }
+
+  .common-ProductLockupBack:hover .hover-strokeDark {
+    stroke: #32325d;
+  }
+
+  .common-Link {
+    color: #6772e5;
+    font-weight: 500;
+    --webkit-transition:color .1s ease;
+    transition:color .1s ease;
+    cursor: pointer;
+  }
+
+  keyboard-navigation .common-Link:focus {
+    outline: none;
+    text-decoration: underline;
+    text-underline-position: under;
+  }
+
+  .common-Link:focus,
+  .common-Link:hover {
+    color: #32325d;
+  }
+
+  .common-Link:active {
+    color: #000;
+  }
+
+  .common-Link--arrow:after {
+    font: normal 16px StripeIcons;
+    content: "\2192";
+    padding-left: 5px;
+  }
+
+  .common-Link--arrowL:before {
+    content:"\2192";
+    -webkit-transform:rotate(180deg);
+    transform:rotate(180deg);
+    margin-right:5px;
+  }
+  .common-Link--arrowL:before,
+  .common-Link--download:before {
+    display:inline-block;
+    font:normal 16px StripeIcons;
+    vertical-align:-2px;
+  }
+  .common-Link--download:before {
+    content:"\279C";
+    margin-right:2px;
+    -webkit-transform:rotate(90deg) scale(.9);
+    transform:rotate(90deg) scale(.9);
+  }
+  .common-UppercaseText.common-Link--arrow:after {
+    content:"\279C";
+  }
+
+  .common-InvertedText .common-BodyTitle,
+  .common-InvertedText .common-PageTitle,
+  .common-InvertedText .common-SectionTitle,
+  .common-InvertedText .common-SectionTitleHighlight,
+  .common-InvertedText .common-UpperText,
+  .common-InvertedText .common-UppercaseTitle {
+    color: #fff;
+  }
+
+  .common-InvertedText .common-IntroText {
+    color: #c4f0ff;
+  }
+
+  .common-InvertedText .common-BodyText {
+    color: #9cdbff;
+  }
+
+  .common-InvertedText .common-Link,
+  .common-link--white {
+    color: #fff;
+  }
+
+  .common-InvertedText .common-Link:focus,
+  .common-InvertedText .common-Link:hover,
+  .common-Link--white:focus,
+  .common-Link--white:hover {
+    color:#c4f0ff;
+  }
+  .common-InvertedText .common-Link:active,
+  .common-Link--white:active {
+    color:#87bbfd;
+  }
+
+  .common-Button {
+    white-space:nowrap;
+    display:inline-block;
+    height:40px;
+    line-height:40px;
+    padding:0 14px;
+    -webkit-box-shadow:0 4px 6px rgba(50,50,93,.11),0 1px 3px rgba(0,0,0,.08);
+    box-shadow:0 4px 6px rgba(50,50,93,.11),0 1px 3px rgba(0,0,0,.08);
+    background:#fff;
+    border-radius:4px;
+    font-size:15px;
+    font-weight:600;
+    text-transform:uppercase;
+    letter-spacing:.025em;
+    color:#6772e5;
+    text-decoration:none;
+    -webkit-transition:all .15s ease;
+    transition:all .15s ease
+  }
+
+  .keyboard-navigation .common-Button:focus {
+    outline:none;
+    -webkit-box-shadow:0 0 0 1.5px hsla(0,0%,100%,.75),0 0 0 1.25px rgba(82,95,127,.5) inset,0 13px 27px -5px rgba(50,50,93,.25),0 8px 16px -8px rgba(0,0,0,.3),0 -6px 16px -6px rgba(0,0,0,.025);
+    box-shadow:0 0 0 1.5px hsla(0,0%,100%,.75),inset 0 0 0 1.25px rgba(82,95,127,.5),0 13px 27px -5px rgba(50,50,93,.25),0 8px 16px -8px rgba(0,0,0,.3),0 -6px 16px -6px rgba(0,0,0,.025)
+  }
+
+  
+
   h1, 
   h2, 
   h3, 
